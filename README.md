@@ -19,7 +19,7 @@ Aplicação CLI que modela uma rede social como **grafo não-direcionado** usand
 
 ```
 rede-social/
-├── graph.py   # lógica: grafo, BFS, recomendação, visualização
+├── grafo.py   # lógica: grafo, BFS, recomendação, visualização
 ├── main.py    # CLI: subcomandos via argparse
 └── README.md
 ```
@@ -41,7 +41,7 @@ python main.py amigos <usuario>
 Exemplo:
 ```bash
 python main.py amigos Alice
-# Amigos de Alice: Bob, Carol, Dave
+# Amigos de Alice: Amaury, Anamalia, Aristóteles, Beatriz, Klaus
 ```
 
 ### Grau de separação entre dois usuários (BFS)
@@ -52,9 +52,9 @@ python main.py separacao <usuario1> <usuario2>
 
 Exemplo:
 ```bash
-python main.py separacao Alice Ivan
+python main.py separacao Alice Igor
 # Graus de separação: 3
-# Caminho: Alice -> Bob -> Eve -> Ivan
+# Caminho: Alice -> Aristóteles -> Antonio -> Igor
 ```
 
 ### Recomendar amigos de amigos
@@ -66,7 +66,7 @@ python main.py recomendar <usuario>
 Exemplo:
 ```bash
 python main.py recomendar Alice
-# Recomendações para Alice: Eve, Frank, Grace, Heidi
+# Recomendações para Alice: Abelardo, Amilton, André, Antonio, Carlos, Diana, Eduardo, Juliana, Laura
 ```
 
 ### Visualizar grafo interativo
@@ -79,4 +79,4 @@ Gera `grafo.html` e abre no navegador. Nós e arestas são interativos (arrastar
 
 ## Usuários disponíveis
 
-`Alice`, `Bob`, `Carol`, `Dave`, `Eve`, `Frank`, `Grace`, `Heidi`, `Ivan`
+`Alice`, `Amaury`, `Anamalia`, `Aristóteles`, `André`, `Abelardo`, `Amilton`, `Antonio`, `Ivan`, `Beatriz`, `Carlos`, `Diana`, `Eduardo`, `Fernanda`, `Gabriel`, `Helena`, `Igor`, `Juliana`, `Klaus`, `Laura`
